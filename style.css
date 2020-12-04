@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+}
+:root {
+    --background-color: #444;
+    --text-color: #ffffff;
+}
+body {
+    background-color: var(--background-color);
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+.content {
+    padding: 10px;
+}
+.banner {
+    background-image: url("./images/dm_sandbox.svg");
+    width: 100%;
+    height: calc(100vw / 2.6);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+p {
+    color: var(--text-color);
+}
+.navbar {
+    display: flex;
+    --item-width: 100px;
+    --item-height: 30px;
+    justify-content: space-evenly;
+}
+.navbar .item {
+    width: var(--item-width);
+    height: var(--item-height);
+    text-align: center;
+    padding: 5px;
+    background-color: magenta;
+    text-decoration: none;
+    color: var(--text-color); 
+}
+@media screen and (max-width: 700px) {
+    .banner {
+        display: none;
+    }
+  }
